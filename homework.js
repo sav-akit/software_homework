@@ -151,7 +151,33 @@ Timmy.buyHamster(Gus);
 Timmy.eat(2);
 Timmy.exercise(2);
 console.log(Timmy)
+//
 console.log(Timmy.hamsters);
+console.log('***************');
+// Chef should be a factory of Dinner
+// Add a constructor to dinner that sets the string properties, appetizer, entree and dessert.
+// Add a method on chef that takes three arguments and returns a new Dinner based on those arguments.
+// Have the Chef create 3 dinners, log the dinners
+
+class Dinner {
+    constructor(appetizer, entree, dessert) {
+       this.appetizer = appetizer;
+       this.entree = entree;
+       this.dessert = dessert;
+    }
+}
+class Chef {
+    createDinner(appetizer, entree, dessert) {
+        return new Dinner(appetizer, entree, dessert);
+    }
+}
+const ChefObj = new Chef();
+const Dinner1 = ChefObj.createDinner('salad','chicken','cake');
+const Dinner2 = ChefObj.createDinner('soup','pasta','Icecream');
+const Dinner3 = ChefObj.createDinner('fries','noodles','cookies');
+console.log(Dinner1);
+console.log(Dinner2);
+console.log(Dinner3);
 
 
 
