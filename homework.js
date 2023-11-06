@@ -90,6 +90,22 @@ class Person {
         this.mood -= 1;
         this.bankAccount += 10;
     }
+    eat(num) {
+        this.weight += num;
+        this.mood += 1;
+    }
+    exercise(num) {
+        this.weight -= num;
+    }
+    ageUp(num){
+        while(this.age < num){
+            this.age += 1;
+            this.height += 1;
+            this.weight += 1;
+            this.mood -= 1;
+            this.bankAccount += 10;
+        }
+    }
     buyHamster(hamObj) {
        this.hamsters.push(hamObj);
        this.mood += 10;
@@ -118,6 +134,30 @@ Person1.buyHamster(Ham1);
 console.log(Person1.hamsters);
 console.log(Person1.bankAccount);
 console.log(Person1);
+
+const Timmy = new Person('Timmy');
+Timmy.ageUp(5);
+//console.log(Timmy.getAge());
+Timmy.eat(5);
+Timmy.exercise(5);
+Timmy.ageUp(9);
+//console.log(Timmy.getAge());
+const Gus =new Hamster('Chole');
+//console.log(Gus);
+Gus.owner = 'Timmy';
+//console.log(Gus);
+Timmy.ageUp(15);
+Timmy.buyHamster(Gus);
+Timmy.eat(2);
+Timmy.exercise(2);
+console.log(Timmy)
+console.log(Timmy.hamsters);
+
+
+
+
+
+
 
 
 
