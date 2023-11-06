@@ -30,3 +30,5 @@ console.log(Ham);
 Ham.WheelRun();
 Ham.eatFood();
 console.log(Ham.getPrice());
+
+
