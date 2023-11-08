@@ -154,6 +154,7 @@ console.log(Timmy)
 //
 console.log(Timmy.hamsters);
 console.log('***************');
+
 // Chef should be a factory of Dinner
 // Add a constructor to dinner that sets the string properties, appetizer, entree and dessert.
 // Add a method on chef that takes three arguments and returns a new Dinner based on those arguments.
