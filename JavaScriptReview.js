@@ -121,7 +121,7 @@ C. calculateCube
 Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
 */
 function calculateCube(num) {
-    return num*num
+    return num**3
 }
 console.log(calculateCube(5));
 
@@ -316,6 +316,7 @@ console.log(combineCats(combineCats(combineCats(combineCats(cat1, cat2),combineC
 console.log('++++++++++++++');
 
 console.log(combineCats(combineCats(combineCats(mamaCat, papaCat),combineCats(mamaCat, papaCat)), combineCats(mamaCat, papaCat)));
+
 
 
 
