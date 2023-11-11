@@ -256,6 +256,22 @@ const thomsOupfit = [thomsCloset[0][Math.floor(Math.random() * thomsCloset[0].le
 
 console.log(`Today Ktistyn will be wearing ${kristynOutfit[0]},${kristynOutfit[1]},${kristynOutfit[2]} and Thoms will be wearing ${thomsOupfit[0]},${thomsOupfit[1]},${thomsOupfit[2]}`);
 
+///////////////////////////////////////////////////
+///////////////Dirty Laundry
+///////////////////////////////////////////////////////
 
+//Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-    
+for(let item of kristynsCloset) {
+    console.log(`WHIRR: Now washing ${item}.`)
+}
+////////////////////////////////////////////////////
+//////////////////Inventory
+///////////////////////////////////////////////////
+
+//Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+for(let i = 0; i < thomsCloset.length; i++) {
+    for(let j = 0; j < thomsCloset[i].length; j++) {
+        console.log(thomsCloset[i][j]);
+    }
+}
