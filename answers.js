@@ -148,8 +148,114 @@
 //////////////////////////////////////////////////////////////////
 /////////////////////Find the Median
 //////////////////////////////////////////////////////////////////
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
-nums.sort();
-let median = Math.floor((nums.length-1)/2);
-console.log(nums[median]);
+// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+// nums.sort();
+// let median = Math.floor((nums.length-1)/2);
+// console.log(nums[median]);
+//////////////////////////////////////////////////
+///////////////Fibonnacci
+/////////////////////////////////////////////////
+// const num = 10;
+// let a = 0;
+// let b = 1;
+// if(num === 1 || num === 0) {
+//     console.log(num);
+// }else {
+//     if(num > 1) {
+//         console.log(a);
+//         console.log(b);
+//         for(let i = 2; i < num; i++) {
+//             c = a+b;
+//             a = b;
+//             b = c;
+//             console.log(c);
+//         }
+//     }
 
+// }
+///////////////////////////
+///////Checkerboard
+///////////////////////////
+// const size = 8;
+// let checkerboard = "";
+ 
+//     for (let row = 0; row < size; row++) {
+//         for (let col = 0; col < size; col++) {
+//             if ((row + col) % 2 === 0) {
+//                 checkerboard += "0";
+//             }
+//             else {
+//                 checkerboard += "x";
+//             }
+//         }
+//        checkerboard += "\n"; 
+//     }
+//     console.log(checkerboard);
+///////////////////////////////////////////
+////////////TwoDArray
+////////////////////////////////////////////
+
+// const twoDArr = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8]
+// ];
+// // console.log(twoDArr);
+//  console.log('*************');
+//     for(let i = 0; i < twoDArr.length; i++) {
+//              for(let j = 0; j < twoDArr[i].length; j++) {
+//                 console.log(twoDArr[i][j]);
+//             }
+//     }
+//////////////////////////////////////////
+//////////////Return of the Closets
+//////////////////////////////////////////
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  //Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+  let kristynsShoe = kristynsCloset.shift();
+  //console.log(kristynsShoe);
+  thomsCloset[2].push(kristynsShoe);
+  //console.log(kristynsCloset);
+  //console.log(thomsCloset[2]);
+
+//Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+const kristynOutfit = [kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)],kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)],kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]];
+const thomsOupfit = [thomsCloset[0][Math.floor(Math.random() * thomsCloset[0].length)],thomsCloset[1][Math.floor(Math.random() * thomsCloset[1].length)],thomsCloset[2][Math.floor(Math.random() * thomsCloset[2].length)]];
+
+console.log(`Today Ktistyn will be wearing ${kristynOutfit[0]},${kristynOutfit[1]},${kristynOutfit[2]} and Thoms will be wearing ${thomsOupfit[0]},${thomsOupfit[1]},${thomsOupfit[2]}`);
+
+
+
+    
