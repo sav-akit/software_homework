@@ -134,15 +134,22 @@
 ////////////////////////////////////////////////////////////
 //Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
-for(let i = 1; i <= 20; i++) {
-    console.log("Love me, pet me! HSSSSSS!" );
-}
-const kittyTalk = ["...human...why you taking pictures of me?...","the catnip made me do it...","...why does the red dot always get away..." ];
-let meow = 0;
-for(let i = 2; i <= 20; i += 2) {
-    meow = Math.floor(Math.random() * kittyTalk.length);
-    console.log(kittyTalk[meow]);
+// for(let i = 1; i <= 20; i++) {
+//     console.log("Love me, pet me! HSSSSSS!" );
+// }
+// const kittyTalk = ["...human...why you taking pictures of me?...","the catnip made me do it...","...why does the red dot always get away..." ];
+// let meow = 0;
+// for(let i = 2; i <= 20; i += 2) {
+//     meow = Math.floor(Math.random() * kittyTalk.length);
+//     console.log(kittyTalk[meow]);
 
-}
+// }
 
+//////////////////////////////////////////////////////////////////
+/////////////////////Find the Median
+//////////////////////////////////////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort();
+let median = Math.floor((nums.length-1)/2);
+console.log(nums[median]);
 
