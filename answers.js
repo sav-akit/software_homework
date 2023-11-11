@@ -116,18 +116,33 @@
 // ////////////////////////////////////////////////////////
 // //////////////Where is Waldo
 // ////////////////////////////////////////////////////////
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
-//Remove Eggbert (hint look at the slice/splice method(s))
-console.log(whereIsWaldo.indexOf('Eggbert'));
-whereIsWaldo.splice(1,1);
-console.log(whereIsWaldo);
-console.log(whereIsWaldo[1].indexOf('Neff'));
-(whereIsWaldo[1]).splice(2,1,'No One');
-console.log(whereIsWaldo);
-console.log(whereIsWaldo[2][1][1]);
+// //Remove Eggbert (hint look at the slice/splice method(s))
+// console.log(whereIsWaldo.indexOf('Eggbert'));
+// whereIsWaldo.splice(1,1);
+// console.log(whereIsWaldo);
+// console.log(whereIsWaldo[1].indexOf('Neff'));
+// (whereIsWaldo[1]).splice(2,1,'No One');
+// console.log(whereIsWaldo);
+// console.log(whereIsWaldo[2][1][1]);
 
+/////////////////////////////////////////////////////////////
+/////////////Excited Kitten
+////////////////////////////////////////////////////////////
+//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+
+for(let i = 1; i <= 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!" );
+}
+const kittyTalk = ["...human...why you taking pictures of me?...","the catnip made me do it...","...why does the red dot always get away..." ];
+let meow = 0;
+for(let i = 2; i <= 20; i += 2) {
+    meow = Math.floor(Math.random() * kittyTalk.length);
+    console.log(kittyTalk[meow]);
+
+}
 
 
