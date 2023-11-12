@@ -283,9 +283,12 @@ updateUser();
 console.log(user);
 //Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
 
-function oldAndLoud() {
-
+function oldAndLoud(person) {
+    person.age++
+    person.name = person.name.toUpperCase();
 }
+oldAndLoud(user);
+console.log(user);
 
 //Cat Combinator
 const mamaCat = {name:'Luna',breed: 'Manchukin',age: 10};
@@ -300,22 +303,22 @@ Write a function combineCatsthat has two parameters mama, and papa. The function
 
 Pass cat1and cat2as arguments to the combineCatsfunction. The function should console.log them.
 
-*/
-function combineCats(cat1,cat2) {
-    return {name :cat1.name+cat2.name, age:1, breed: cat1.breed+'-'+cat2.breed};
-}
-console.log(combineCats(mamaCat, papaCat));
-console.log(combineCats(combineCats(mamaCat, papaCat), combineCats(mamaCat, papaCat)));
-const cat1 = { name: "Joe", age: 19, breed: "Mog" };
-const cat2 = { name: "Jam", age: 45, breed: "Siamese" }
-// console.log(combineCats(cat1, cat2));
-// console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
-console.log(combineCats(combineCats(combineCats(combineCats(cat1, cat2),combineCats(cat1, cat2)),combineCats(cat1, cat2)), combineCats(cat1, cat2)));
+// */
+// function combineCats(cat1,cat2) {
+//     return {name :cat1.name+cat2.name, age:1, breed: cat1.breed+'-'+cat2.breed};
+// }
+// console.log(combineCats(mamaCat, papaCat));
+// console.log(combineCats(combineCats(mamaCat, papaCat), combineCats(mamaCat, papaCat)));
+// const cat1 = { name: "Joe", age: 19, breed: "Mog" };
+// const cat2 = { name: "Jam", age: 45, breed: "Siamese" }
+// // console.log(combineCats(cat1, cat2));
+// // console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+// console.log(combineCats(combineCats(combineCats(combineCats(cat1, cat2),combineCats(cat1, cat2)),combineCats(cat1, cat2)), combineCats(cat1, cat2)));
 
 
-console.log('++++++++++++++');
+// console.log('++++++++++++++');
 
-console.log(combineCats(combineCats(combineCats(mamaCat, papaCat),combineCats(mamaCat, papaCat)), combineCats(mamaCat, papaCat)));
+// console.log(combineCats(combineCats(combineCats(mamaCat, papaCat),combineCats(mamaCat, papaCat)), combineCats(mamaCat, papaCat)));
 
 
 
